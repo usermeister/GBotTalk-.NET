@@ -50,15 +50,18 @@
             // 
             // txtFill
             // 
+            this.txtFill.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.txtFill.Location = new System.Drawing.Point(12, 42);
             this.txtFill.Multiline = true;
             this.txtFill.Name = "txtFill";
-            this.txtFill.Size = new System.Drawing.Size(458, 179);
+            this.txtFill.Size = new System.Drawing.Size(342, 441);
             this.txtFill.TabIndex = 1;
             // 
             // btnListFill
             // 
-            this.btnListFill.Location = new System.Drawing.Point(94, 13);
+            this.btnListFill.Location = new System.Drawing.Point(142, 13);
             this.btnListFill.Name = "btnListFill";
             this.btnListFill.Size = new System.Drawing.Size(75, 23);
             this.btnListFill.TabIndex = 2;
@@ -77,6 +80,7 @@
             this.jabberClient1.Password = "l0zink4";
             this.jabberClient1.Server = "gmail.com";
             this.jabberClient1.User = "usermeister1@gmail.com";
+            this.jabberClient1.OnPresence += new jabber.client.PresenceHandler(this.jabberClient1_OnPresence);
             this.jabberClient1.OnMessage += new jabber.client.MessageHandler(this.jabberClient1_OnMessage);
             this.jabberClient1.OnConnect += new jabber.connection.StanzaStreamHandler(this.jabberClient1_OnConnect);
             // 
@@ -93,7 +97,7 @@
             // 
             // btnPresenceManager
             // 
-            this.btnPresenceManager.Location = new System.Drawing.Point(176, 12);
+            this.btnPresenceManager.Location = new System.Drawing.Point(279, 13);
             this.btnPresenceManager.Name = "btnPresenceManager";
             this.btnPresenceManager.Size = new System.Drawing.Size(75, 23);
             this.btnPresenceManager.TabIndex = 3;
@@ -105,7 +109,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(482, 398);
+            this.ClientSize = new System.Drawing.Size(366, 495);
             this.Controls.Add(this.btnPresenceManager);
             this.Controls.Add(this.btnListFill);
             this.Controls.Add(this.txtFill);
