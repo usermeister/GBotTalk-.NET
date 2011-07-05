@@ -1,0 +1,9 @@
+C:\Users\nmundar\Documents\Visual Studio 2010\Projects\GBotTalk\LinqTest\bin\Debug\LinqTest.exe
+C:\Users\nmundar\Documents\Visual Studio 2010\Projects\GBotTalk\LinqTest\bin\Debug\LinqTest.pdb
+C:\Users\nmundar\Documents\Visual Studio 2010\Projects\GBotTalk\LinqTest\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\nmundar\Documents\Visual Studio 2010\Projects\GBotTalk\LinqTest\obj\x86\Debug\LinqTest.Form1.resources
+C:\Users\nmundar\Documents\Visual Studio 2010\Projects\GBotTalk\LinqTest\obj\x86\Debug\LinqTest.Properties.Resources.resources
+C:\Users\nmundar\Documents\Visual Studio 2010\Projects\GBotTalk\LinqTest\obj\x86\Debug\ResGen.read.1.tlog
+C:\Users\nmundar\Documents\Visual Studio 2010\Projects\GBotTalk\LinqTest\obj\x86\Debug\ResGen.write.1.tlog
+C:\Users\nmundar\Documents\Visual Studio 2010\Projects\GBotTalk\LinqTest\obj\x86\Debug\LinqTest.exe
+C:\Users\nmundar\Documents\Visual Studio 2010\Projects\GBotTalk\LinqTest\obj\x86\Debug\LinqTest.pdb

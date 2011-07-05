@@ -12,6 +12,9 @@ namespace GBotTalk
     public partial class Form1 : Form
     {
 
+        public static string userJID { get; set; }
+        public static string bodyText { get; set; }
+
         public Form1()
         {
             InitializeComponent();
@@ -49,6 +52,8 @@ namespace GBotTalk
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            userJID = "botuly@gmail.com";
+            bodyText = "--== Default GBotTalk .NET message ==--";
         }
 
 
@@ -64,34 +69,31 @@ namespace GBotTalk
 
         private void btnPresenceManager_Click(object sender, EventArgs e)
         {
-            //jabberClient1.GetRoster();
-            if (presenceManager1.IsAvailable("usermeister2@gmail.com"))
-            {
-                jabber.protocol.client.Message msg = new jabber.protocol.client.Message(jabberClient1.Document);
-                msg.Type = jabber.protocol.client.MessageType.chat;
-                msg.Body = "Test";
-                msg.To = "usermeister2@gmail.com";
-                jabberClient1.Write(msg);
-
-                txtFill.Text += "Sent online msg: '" + msg.Body + "'" + Environment.NewLine;
-            }
-            else
-            {
-               // MessageBox.Show("User not available!");
-                jabber.protocol.client.Message msg = new jabber.protocol.client.Message(jabberClient1.Document);
-                msg.Type = jabber.protocol.client.MessageType.chat;
-                msg.Body = "Test offline poruke";
-                msg.To = "usermeister2@gmail.com";
-                jabberClient1.Write(msg);
-                
-                txtFill.Text += "Sent offline msg: '" + msg.Body + "'" + Environment.NewLine;
-            }
+            SendMessage();
         }
+
+        private void SendMessage()
+        {
+            jabber.protocol.client.Message msg = new jabber.protocol.client.Message(jabberClient1.Document);
+            msg.Type = jabber.protocol.client.MessageType.chat;
+            msg.Body = bodyText;
+            msg.To = userJID;
+
+            if (presenceManager1.IsAvailable(userJID))
+                txtFill.Text += "Sent online msg: '";
+            else
+                txtFill.Text += "Sent offline msg: '";
+
+            txtFill.Text += msg.Body + "'" + Environment.NewLine;
+            jabberClient1.Write(msg);
+        }
+
 
         private void jabberClient1_OnPresence(object sender, jabber.protocol.client.Presence pres)
         {
             jabberClient1.GetRoster();
-        }	
+        }
+
 
     }
 }
