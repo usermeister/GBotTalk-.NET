@@ -44,6 +44,7 @@ namespace GBotTalk
             {
                 txtFill.Text += "Item:" + Environment.NewLine + item.ToString() + Environment.NewLine + Environment.NewLine;
             } 
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -67,13 +68,23 @@ namespace GBotTalk
             if (presenceManager1.IsAvailable("usermeister2@gmail.com"))
             {
                 jabber.protocol.client.Message msg = new jabber.protocol.client.Message(jabberClient1.Document);
+                msg.Type = jabber.protocol.client.MessageType.chat;
                 msg.Body = "Test";
                 msg.To = "usermeister2@gmail.com";
                 jabberClient1.Write(msg);
+
+                txtFill.Text += "Sent online msg: '" + msg.Body + "'" + Environment.NewLine;
             }
             else
             {
-                MessageBox.Show("User not available!");
+               // MessageBox.Show("User not available!");
+                jabber.protocol.client.Message msg = new jabber.protocol.client.Message(jabberClient1.Document);
+                msg.Type = jabber.protocol.client.MessageType.chat;
+                msg.Body = "Test offline poruke";
+                msg.To = "usermeister2@gmail.com";
+                jabberClient1.Write(msg);
+                
+                txtFill.Text += "Sent offline msg: '" + msg.Body + "'" + Environment.NewLine;
             }
         }
 
