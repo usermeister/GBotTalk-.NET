@@ -33,6 +33,7 @@
             this.txtFill = new System.Windows.Forms.TextBox();
             this.btnListFill = new System.Windows.Forms.Button();
             this.jabberClient1 = new jabber.client.JabberClient(this.components);
+            this.rosterManager1 = new jabber.client.RosterManager(this.components);
             this.SuspendLayout();
             // 
             // btnConnect
@@ -50,7 +51,7 @@
             this.txtFill.Location = new System.Drawing.Point(12, 42);
             this.txtFill.Multiline = true;
             this.txtFill.Name = "txtFill";
-            this.txtFill.Size = new System.Drawing.Size(283, 179);
+            this.txtFill.Size = new System.Drawing.Size(458, 179);
             this.txtFill.TabIndex = 1;
             // 
             // btnListFill
@@ -77,6 +78,12 @@
             this.jabberClient1.OnMessage += new jabber.client.MessageHandler(this.jabberClient1_OnMessage);
             this.jabberClient1.OnConnect += new jabber.connection.StanzaStreamHandler(this.jabberClient1_OnConnect);
             // 
+            // rosterManager1
+            // 
+            this.rosterManager1.AutoSubscribe = true;
+            this.rosterManager1.Stream = this.jabberClient1;
+            this.rosterManager1.OnRosterEnd += new bedrock.ObjectHandler(this.rosterManager1_OnRosterEnd);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -99,6 +106,7 @@
         private System.Windows.Forms.TextBox txtFill;
         private System.Windows.Forms.Button btnListFill;
         private jabber.client.JabberClient jabberClient1;
+        private jabber.client.RosterManager rosterManager1;
     }
 }
 

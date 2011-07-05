@@ -15,6 +15,7 @@ namespace GBotTalk
         public Form1()
         {
             InitializeComponent();
+            btnListFill.Enabled = false;
         }
 
         private void Connect()
@@ -25,15 +26,19 @@ namespace GBotTalk
         private void btnConnect_Click(object sender, System.EventArgs e)
         {
             Connect();
+            btnConnect.Enabled = false;
         }
 
         private void btnListFill_Click(object sender, System.EventArgs e)
         {
-
+            foreach (var item in rosterManager1.Container.Components)
+            {
+                txtFill.Text += item.ToString() + Environment.NewLine;
+            } 
         }
 
         private void Form1_Load(object sender, EventArgs e)
-        {;
+        {
         }
 
         private void jabberClient1_OnMessage(object sender, jabber.protocol.client.Message msg)
@@ -47,7 +52,14 @@ namespace GBotTalk
 
         private void jabberClient1_OnConnect(object sender, jabber.connection.StanzaStream stream)
         {
-            txtFill.Text = "Connect";
+            txtFill.Text = "Connect" + Environment.NewLine;
+        }
+
+        private void rosterManager1_OnRosterEnd(object sender)
+        {
+            btnListFill.Enabled = true;
+            
+            
         }	
 
     }
