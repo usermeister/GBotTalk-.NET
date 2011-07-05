@@ -80,6 +80,7 @@
             this.jabberClient1.Password = "l0zink4";
             this.jabberClient1.Server = "gmail.com";
             this.jabberClient1.User = "usermeister1@gmail.com";
+            this.jabberClient1.OnPresence += new jabber.client.PresenceHandler(this.jabberClient1_OnPresence);
             this.jabberClient1.OnMessage += new jabber.client.MessageHandler(this.jabberClient1_OnMessage);
             this.jabberClient1.OnConnect += new jabber.connection.StanzaStreamHandler(this.jabberClient1_OnConnect);
             // 

@@ -42,7 +42,7 @@ namespace GBotTalk
         {
             foreach (var item in rosterManager1.Container.Components)
             {
-                txtFill.Text += item.ToString() + Environment.NewLine + Environment.NewLine;
+                txtFill.Text += "Item:" + Environment.NewLine + item.ToString() + Environment.NewLine + Environment.NewLine;
             } 
         }
 
@@ -63,7 +63,7 @@ namespace GBotTalk
 
         private void btnPresenceManager_Click(object sender, EventArgs e)
         {
-            
+            //jabberClient1.GetRoster();
             if (presenceManager1.IsAvailable("usermeister2@gmail.com"))
             {
                 jabber.protocol.client.Message msg = new jabber.protocol.client.Message(jabberClient1.Document);
@@ -75,6 +75,11 @@ namespace GBotTalk
             {
                 MessageBox.Show("User not available!");
             }
+        }
+
+        private void jabberClient1_OnPresence(object sender, jabber.protocol.client.Presence pres)
+        {
+            jabberClient1.GetRoster();
         }	
 
     }
