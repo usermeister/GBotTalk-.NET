@@ -1,0 +1,12 @@
+C:\Users\nmundar\Documents\Visual Studio 2010\Projects\GBotTalk\GBotTalk\bin\Debug\GBotTalk.exe
+C:\Users\nmundar\Documents\Visual Studio 2010\Projects\GBotTalk\GBotTalk\bin\Debug\GBotTalk.pdb
+C:\Users\nmundar\Documents\Visual Studio 2010\Projects\GBotTalk\GBotTalk\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\nmundar\Documents\Visual Studio 2010\Projects\GBotTalk\GBotTalk\obj\x86\Debug\GBotTalk.Form1.resources
+C:\Users\nmundar\Documents\Visual Studio 2010\Projects\GBotTalk\GBotTalk\obj\x86\Debug\GBotTalk.Properties.Resources.resources
+C:\Users\nmundar\Documents\Visual Studio 2010\Projects\GBotTalk\GBotTalk\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\nmundar\Documents\Visual Studio 2010\Projects\GBotTalk\GBotTalk\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\nmundar\Documents\Visual Studio 2010\Projects\GBotTalk\GBotTalk\obj\x86\Debug\GBotTalk.exe
+C:\Users\nmundar\Documents\Visual Studio 2010\Projects\GBotTalk\GBotTalk\obj\x86\Debug\GBotTalk.pdb
+C:\Users\nmundar\Documents\Visual Studio 2010\Projects\GBotTalk\GBotTalk\bin\Debug\jabber-net.dll
+C:\Users\nmundar\Documents\Visual Studio 2010\Projects\GBotTalk\GBotTalk\bin\Debug\zlib.net.dll
+C:\Users\nmundar\Documents\Visual Studio 2010\Projects\GBotTalk\GBotTalk\bin\Debug\netlib.Dns.dll
