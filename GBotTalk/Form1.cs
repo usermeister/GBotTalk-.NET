@@ -29,18 +29,6 @@ namespace GBotTalk
             btnConnect.Enabled = false;
         }
 
-        private void btnListFill_Click(object sender, System.EventArgs e)
-        {
-            foreach (var item in rosterManager1.Container.Components)
-            {
-                txtFill.Text += item.ToString() + Environment.NewLine;
-            } 
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-        }
-
         private void jabberClient1_OnMessage(object sender, jabber.protocol.client.Message msg)
         {
             jabber.protocol.client.Message reply = new jabber.protocol.client.Message(jabberClient1.Document);
@@ -50,6 +38,19 @@ namespace GBotTalk
             txtFill.Text = msg.Body;
         }
 
+        private void btnListFill_Click(object sender, System.EventArgs e)
+        {
+            foreach (var item in rosterManager1.Container.Components)
+            {
+                txtFill.Text += item.ToString() + Environment.NewLine + Environment.NewLine;
+            } 
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+        }
+
+
         private void jabberClient1_OnConnect(object sender, jabber.connection.StanzaStream stream)
         {
             txtFill.Text = "Connect" + Environment.NewLine;
@@ -58,13 +59,22 @@ namespace GBotTalk
         private void rosterManager1_OnRosterEnd(object sender)
         {
             btnListFill.Enabled = true;
-            
-            
         }
 
         private void btnPresenceManager_Click(object sender, EventArgs e)
         {
             
+            if (presenceManager1.IsAvailable("usermeister2@gmail.com"))
+            {
+                jabber.protocol.client.Message msg = new jabber.protocol.client.Message(jabberClient1.Document);
+                msg.Body = "Test";
+                msg.To = "usermeister2@gmail.com";
+                jabberClient1.Write(msg);
+            }
+            else
+            {
+                MessageBox.Show("User not available!");
+            }
         }	
 
     }
