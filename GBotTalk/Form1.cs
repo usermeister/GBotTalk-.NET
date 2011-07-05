@@ -60,6 +60,11 @@ namespace GBotTalk
             btnListFill.Enabled = true;
             
             
+        }
+
+        private void btnPresenceManager_Click(object sender, EventArgs e)
+        {
+            
         }	
 
     }

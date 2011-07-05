@@ -34,6 +34,8 @@
             this.btnListFill = new System.Windows.Forms.Button();
             this.jabberClient1 = new jabber.client.JabberClient(this.components);
             this.rosterManager1 = new jabber.client.RosterManager(this.components);
+            this.presenceManager1 = new jabber.client.PresenceManager(this.components);
+            this.btnPresenceManager = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnConnect
@@ -84,11 +86,27 @@
             this.rosterManager1.Stream = this.jabberClient1;
             this.rosterManager1.OnRosterEnd += new bedrock.ObjectHandler(this.rosterManager1_OnRosterEnd);
             // 
+            // presenceManager1
+            // 
+            this.presenceManager1.CapsManager = null;
+            this.presenceManager1.Stream = this.jabberClient1;
+            // 
+            // btnPresenceManager
+            // 
+            this.btnPresenceManager.Location = new System.Drawing.Point(176, 12);
+            this.btnPresenceManager.Name = "btnPresenceManager";
+            this.btnPresenceManager.Size = new System.Drawing.Size(75, 23);
+            this.btnPresenceManager.TabIndex = 3;
+            this.btnPresenceManager.Text = "Presence manager";
+            this.btnPresenceManager.UseVisualStyleBackColor = true;
+            this.btnPresenceManager.Click += new System.EventHandler(this.btnPresenceManager_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(482, 398);
+            this.Controls.Add(this.btnPresenceManager);
             this.Controls.Add(this.btnListFill);
             this.Controls.Add(this.txtFill);
             this.Controls.Add(this.btnConnect);
@@ -107,6 +125,8 @@
         private System.Windows.Forms.Button btnListFill;
         private jabber.client.JabberClient jabberClient1;
         private jabber.client.RosterManager rosterManager1;
+        private jabber.client.PresenceManager presenceManager1;
+        private System.Windows.Forms.Button btnPresenceManager;
     }
 }
 
