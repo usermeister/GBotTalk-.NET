@@ -7,3 +7,4 @@ C:\Users\nmundar\Documents\Visual Studio 2010\Projects\GBotTalk\LinqTest\obj\x86
 C:\Users\nmundar\Documents\Visual Studio 2010\Projects\GBotTalk\LinqTest\obj\x86\Debug\ResGen.write.1.tlog
 C:\Users\nmundar\Documents\Visual Studio 2010\Projects\GBotTalk\LinqTest\obj\x86\Debug\LinqTest.exe
 C:\Users\nmundar\Documents\Visual Studio 2010\Projects\GBotTalk\LinqTest\obj\x86\Debug\LinqTest.pdb
+C:\Users\nmundar\Documents\Visual Studio 2010\Projects\GBotTalk\LinqTest\bin\Debug\LinqTest.exe.config
