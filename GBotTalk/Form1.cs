@@ -15,6 +15,10 @@ namespace GBotTalk
         public static string userJID { get; set; }
         public static string bodyText { get; set; }
 
+        //int intervalInMinutes = 1;
+        //int intervalMiliSecs = 1 * 60 * 1000; // min, sec, milisec
+        int intervalMiliSecs = 1 * 10 * 1000; // min, sec, milisec
+
         public Form1()
         {
             InitializeComponent();
@@ -53,7 +57,8 @@ namespace GBotTalk
         private void Form1_Load(object sender, EventArgs e)
         {
             userJID = "botuly@gmail.com";
-            bodyText = "--== Default GBotTalk .NET message ==--";
+            bodyText = "--== Default GBotTalk .NET message ==--" + Environment.NewLine 
+                        + "Interval is: " + intervalMiliSecs.ToString() + "ms.";
         }
 
 
@@ -92,6 +97,28 @@ namespace GBotTalk
         private void jabberClient1_OnPresence(object sender, jabber.protocol.client.Presence pres)
         {
             jabberClient1.GetRoster();
+        }
+
+        private void btnStartTimer_Click(object sender, EventArgs e)
+        {
+            string buttonTxt;
+            taskTimer.Interval = intervalMiliSecs; // miliseconds
+            if (taskTimer.Enabled)
+            {
+                taskTimer.Enabled = false;
+                buttonTxt = "Start timer";
+            }
+            else
+            {
+                taskTimer.Enabled = true;
+                buttonTxt = "End timer";
+            }
+            btnStartTimer.Text = buttonTxt;
+        }
+
+        private void taskTimer_Tick(object sender, EventArgs e)
+        {
+            SendMessage();
         }
 
 

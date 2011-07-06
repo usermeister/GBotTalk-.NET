@@ -36,6 +36,8 @@
             this.rosterManager1 = new jabber.client.RosterManager(this.components);
             this.presenceManager1 = new jabber.client.PresenceManager(this.components);
             this.btnPresenceManager = new System.Windows.Forms.Button();
+            this.taskTimer = new System.Windows.Forms.Timer(this.components);
+            this.btnStartTimer = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnConnect
@@ -50,13 +52,13 @@
             // 
             // txtFill
             // 
-            this.txtFill.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtFill.Location = new System.Drawing.Point(12, 42);
+            this.txtFill.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtFill.Location = new System.Drawing.Point(12, 73);
             this.txtFill.Multiline = true;
             this.txtFill.Name = "txtFill";
-            this.txtFill.Size = new System.Drawing.Size(342, 441);
+            this.txtFill.Size = new System.Drawing.Size(342, 319);
             this.txtFill.TabIndex = 1;
             // 
             // btnListFill
@@ -105,11 +107,27 @@
             this.btnPresenceManager.UseVisualStyleBackColor = true;
             this.btnPresenceManager.Click += new System.EventHandler(this.btnPresenceManager_Click);
             // 
+            // taskTimer
+            // 
+            this.taskTimer.Interval = 60000;
+            this.taskTimer.Tick += new System.EventHandler(this.taskTimer_Tick);
+            // 
+            // btnStartTimer
+            // 
+            this.btnStartTimer.Location = new System.Drawing.Point(142, 43);
+            this.btnStartTimer.Name = "btnStartTimer";
+            this.btnStartTimer.Size = new System.Drawing.Size(75, 23);
+            this.btnStartTimer.TabIndex = 4;
+            this.btnStartTimer.Text = "Start Timer";
+            this.btnStartTimer.UseVisualStyleBackColor = true;
+            this.btnStartTimer.Click += new System.EventHandler(this.btnStartTimer_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(366, 495);
+            this.ClientSize = new System.Drawing.Size(366, 404);
+            this.Controls.Add(this.btnStartTimer);
             this.Controls.Add(this.btnPresenceManager);
             this.Controls.Add(this.btnListFill);
             this.Controls.Add(this.txtFill);
@@ -131,6 +149,8 @@
         private jabber.client.RosterManager rosterManager1;
         private jabber.client.PresenceManager presenceManager1;
         private System.Windows.Forms.Button btnPresenceManager;
+        private System.Windows.Forms.Button btnStartTimer;
+        private System.Windows.Forms.Timer taskTimer;
     }
 }
 
