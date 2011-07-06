@@ -20,5 +20,18 @@ namespace LinqTest
         {
 
         }
+
+        private void btnQuery_Click(object sender, EventArgs e)
+        {
+            DataClassesTestDBDataContext dc = new DataClassesTestDBDataContext();
+            var q = from u in dc.Users
+                    select u;
+            foreach (var u in q)
+            {
+                txtQuery.Text += u.username.Trim() + ": " + u.JID.Trim() + Environment.NewLine;
+            }
+
+            dataGridView1.DataSource = dc.Contacts;
+        }
     }
 }
