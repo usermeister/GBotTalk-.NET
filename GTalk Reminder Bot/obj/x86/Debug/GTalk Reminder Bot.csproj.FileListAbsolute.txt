@@ -1,0 +1,13 @@
+C:\Users\nmundar\Documents\Visual Studio 2010\Projects\GBotTalk\GTalk Reminder Bot\bin\Debug\GTalk Reminder Bot.exe
+C:\Users\nmundar\Documents\Visual Studio 2010\Projects\GBotTalk\GTalk Reminder Bot\bin\Debug\GTalk Reminder Bot.pdb
+C:\Users\nmundar\Documents\Visual Studio 2010\Projects\GBotTalk\GTalk Reminder Bot\bin\Debug\jabber-net.dll
+C:\Users\nmundar\Documents\Visual Studio 2010\Projects\GBotTalk\GTalk Reminder Bot\bin\Debug\zlib.net.dll
+C:\Users\nmundar\Documents\Visual Studio 2010\Projects\GBotTalk\GTalk Reminder Bot\bin\Debug\netlib.Dns.dll
+C:\Users\nmundar\Documents\Visual Studio 2010\Projects\GBotTalk\GTalk Reminder Bot\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\nmundar\Documents\Visual Studio 2010\Projects\GBotTalk\GTalk Reminder Bot\obj\x86\Debug\GTalk_Reminder_Bot.Form1.resources
+C:\Users\nmundar\Documents\Visual Studio 2010\Projects\GBotTalk\GTalk Reminder Bot\obj\x86\Debug\GTalk_Reminder_Bot.Properties.Resources.resources
+C:\Users\nmundar\Documents\Visual Studio 2010\Projects\GBotTalk\GTalk Reminder Bot\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\nmundar\Documents\Visual Studio 2010\Projects\GBotTalk\GTalk Reminder Bot\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\nmundar\Documents\Visual Studio 2010\Projects\GBotTalk\GTalk Reminder Bot\obj\x86\Debug\GTalk Reminder Bot.exe
+C:\Users\nmundar\Documents\Visual Studio 2010\Projects\GBotTalk\GTalk Reminder Bot\obj\x86\Debug\GTalk Reminder Bot.pdb
+C:\Users\nmundar\Documents\Visual Studio 2010\Projects\GBotTalk\GTalk Reminder Bot\bin\Debug\GTalk Reminder Bot.exe.config

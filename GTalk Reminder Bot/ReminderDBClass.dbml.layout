@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="ReminderDBClass">
+  <DataContextMoniker Name="/ReminderDBClassDataContext" />
+  <nestedChildShapes>
+    <classShape Id="98445e20-78e4-4119-a1a0-4e7b21823ef0" absoluteBounds="0.5, 0.5, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/ReminderDBClassDataContext/Task" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0b122e16-d982-458b-8121-298b48c4abda" absoluteBounds="0.51500000000000012, 0.96, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
