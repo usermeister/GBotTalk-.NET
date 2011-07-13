@@ -31,15 +31,15 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnSignIn = new System.Windows.Forms.Button();
-            this.txtGTalkUsername = new System.Windows.Forms.TextBox();
-            this.txtGTalkPassword = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lblUsernameStatus = new System.Windows.Forms.Label();
-            this.jabberClient = new jabber.client.JabberClient(this.components);
-            this.lblConnectionStatus = new System.Windows.Forms.Label();
             this.lblPasswordStatus = new System.Windows.Forms.Label();
+            this.lblConnectionStatus = new System.Windows.Forms.Label();
+            this.lblUsernameStatus = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtGTalkPassword = new System.Windows.Forms.TextBox();
+            this.txtGTalkUsername = new System.Windows.Forms.TextBox();
+            this.btnSignIn = new System.Windows.Forms.Button();
+            this.jabberClient = new jabber.client.JabberClient(this.components);
             this.rosterManager = new jabber.client.RosterManager(this.components);
             this.presenceManager = new jabber.client.PresenceManager(this.components);
             this.timer = new System.Windows.Forms.Timer(this.components);
@@ -67,48 +67,23 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Sign in with your Google Account";
             // 
-            // btnSignIn
+            // lblPasswordStatus
             // 
-            this.btnSignIn.Location = new System.Drawing.Point(70, 118);
-            this.btnSignIn.Name = "btnSignIn";
-            this.btnSignIn.Size = new System.Drawing.Size(56, 23);
-            this.btnSignIn.TabIndex = 0;
-            this.btnSignIn.Text = "Sign in";
-            this.btnSignIn.UseVisualStyleBackColor = true;
-            this.btnSignIn.Click += new System.EventHandler(this.btnSignIn_Click);
+            this.lblPasswordStatus.AutoSize = true;
+            this.lblPasswordStatus.ForeColor = System.Drawing.Color.Red;
+            this.lblPasswordStatus.Location = new System.Drawing.Point(73, 96);
+            this.lblPasswordStatus.Name = "lblPasswordStatus";
+            this.lblPasswordStatus.Size = new System.Drawing.Size(0, 13);
+            this.lblPasswordStatus.TabIndex = 7;
             // 
-            // txtGTalkUsername
+            // lblConnectionStatus
             // 
-            this.txtGTalkUsername.Location = new System.Drawing.Point(70, 26);
-            this.txtGTalkUsername.Name = "txtGTalkUsername";
-            this.txtGTalkUsername.Size = new System.Drawing.Size(189, 20);
-            this.txtGTalkUsername.TabIndex = 1;
-            // 
-            // txtGTalkPassword
-            // 
-            this.txtGTalkPassword.Location = new System.Drawing.Point(70, 73);
-            this.txtGTalkPassword.Name = "txtGTalkPassword";
-            this.txtGTalkPassword.PasswordChar = '*';
-            this.txtGTalkPassword.Size = new System.Drawing.Size(189, 20);
-            this.txtGTalkPassword.TabIndex = 2;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 29);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 13);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Username:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(8, 76);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 13);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Password:";
+            this.lblConnectionStatus.AutoSize = true;
+            this.lblConnectionStatus.Location = new System.Drawing.Point(132, 123);
+            this.lblConnectionStatus.Name = "lblConnectionStatus";
+            this.lblConnectionStatus.Size = new System.Drawing.Size(43, 13);
+            this.lblConnectionStatus.TabIndex = 6;
+            this.lblConnectionStatus.Text = "Status: ";
             // 
             // lblUsernameStatus
             // 
@@ -119,6 +94,49 @@
             this.lblUsernameStatus.Size = new System.Drawing.Size(121, 13);
             this.lblUsernameStatus.TabIndex = 5;
             this.lblUsernameStatus.Text = "ex: example@gmail.com";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(8, 76);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(56, 13);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Password:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 29);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(58, 13);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Username:";
+            // 
+            // txtGTalkPassword
+            // 
+            this.txtGTalkPassword.Location = new System.Drawing.Point(70, 73);
+            this.txtGTalkPassword.Name = "txtGTalkPassword";
+            this.txtGTalkPassword.PasswordChar = '*';
+            this.txtGTalkPassword.Size = new System.Drawing.Size(189, 20);
+            this.txtGTalkPassword.TabIndex = 2;
+            // 
+            // txtGTalkUsername
+            // 
+            this.txtGTalkUsername.Location = new System.Drawing.Point(70, 26);
+            this.txtGTalkUsername.Name = "txtGTalkUsername";
+            this.txtGTalkUsername.Size = new System.Drawing.Size(189, 20);
+            this.txtGTalkUsername.TabIndex = 1;
+            // 
+            // btnSignIn
+            // 
+            this.btnSignIn.Location = new System.Drawing.Point(70, 118);
+            this.btnSignIn.Name = "btnSignIn";
+            this.btnSignIn.Size = new System.Drawing.Size(56, 23);
+            this.btnSignIn.TabIndex = 0;
+            this.btnSignIn.Text = "Sign in";
+            this.btnSignIn.UseVisualStyleBackColor = true;
+            this.btnSignIn.Click += new System.EventHandler(this.btnSignIn_Click);
             // 
             // jabberClient
             // 
@@ -134,24 +152,6 @@
             this.jabberClient.OnAuthError += new jabber.protocol.ProtocolHandler(this.jabberClient_OnAuthError);
             this.jabberClient.OnAuthenticate += new bedrock.ObjectHandler(this.jabberClient_OnAuthenticate);
             this.jabberClient.OnConnect += new jabber.connection.StanzaStreamHandler(this.jabberClient_OnConnect);
-            // 
-            // lblConnectionStatus
-            // 
-            this.lblConnectionStatus.AutoSize = true;
-            this.lblConnectionStatus.Location = new System.Drawing.Point(132, 123);
-            this.lblConnectionStatus.Name = "lblConnectionStatus";
-            this.lblConnectionStatus.Size = new System.Drawing.Size(43, 13);
-            this.lblConnectionStatus.TabIndex = 6;
-            this.lblConnectionStatus.Text = "Status: ";
-            // 
-            // lblPasswordStatus
-            // 
-            this.lblPasswordStatus.AutoSize = true;
-            this.lblPasswordStatus.ForeColor = System.Drawing.Color.Red;
-            this.lblPasswordStatus.Location = new System.Drawing.Point(73, 96);
-            this.lblPasswordStatus.Name = "lblPasswordStatus";
-            this.lblPasswordStatus.Size = new System.Drawing.Size(0, 13);
-            this.lblPasswordStatus.TabIndex = 7;
             // 
             // rosterManager
             // 
@@ -171,10 +171,11 @@
             // 
             this.txtActivity.Enabled = false;
             this.txtActivity.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.txtActivity.ForeColor = System.Drawing.Color.Black;
             this.txtActivity.Location = new System.Drawing.Point(16, 201);
             this.txtActivity.Multiline = true;
             this.txtActivity.Name = "txtActivity";
-            this.txtActivity.Size = new System.Drawing.Size(411, 169);
+            this.txtActivity.Size = new System.Drawing.Size(454, 169);
             this.txtActivity.TabIndex = 1;
             // 
             // label3
@@ -189,7 +190,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(294, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(323, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(133, 157);
             this.pictureBox1.TabIndex = 3;
@@ -199,7 +200,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(439, 382);
+            this.ClientSize = new System.Drawing.Size(482, 382);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtActivity);

@@ -85,7 +85,7 @@ namespace GTalk_Reminder_Bot
                                 msg.To = r;
                                 jabberClient.Write(msg);
                                 txtActivity.Text += "Msg sent. " +
-                                                    " DateTime.now: " + DateTime.Now.ToString() +
+                                                    " Now: " + DateTime.Now.ToString() +
                                                     " tmpTime: " + tmpTime.ToString() +
                                                     " taskID: " + task.taskID.ToString() +
                                                     Environment.NewLine;
@@ -116,6 +116,7 @@ namespace GTalk_Reminder_Bot
             lblConnectionStatus.ForeColor = Color.DarkGreen;
             lblConnectionStatus.Text = "Status: Signed in.";
             timer.Start();
+            GetTasksAndSendMessages();
         }
 
         private void timer_Tick(object sender, EventArgs e)
