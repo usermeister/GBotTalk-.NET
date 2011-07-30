@@ -11,3 +11,15 @@ C:\Users\nmundar\Documents\Visual Studio 2010\Projects\GBotTalk\GTalk Reminder B
 C:\Users\nmundar\Documents\Visual Studio 2010\Projects\GBotTalk\GTalk Reminder Bot\obj\x86\Debug\GTalk Reminder Bot.exe
 C:\Users\nmundar\Documents\Visual Studio 2010\Projects\GBotTalk\GTalk Reminder Bot\obj\x86\Debug\GTalk Reminder Bot.pdb
 C:\Users\nmundar\Documents\Visual Studio 2010\Projects\GBotTalk\GTalk Reminder Bot\bin\Debug\GTalk Reminder Bot.exe.config
+D:\Work\Visual Studio Projects\GBotTalk\GTalk Reminder Bot\bin\Debug\GTalk Reminder Bot.exe.config
+D:\Work\Visual Studio Projects\GBotTalk\GTalk Reminder Bot\obj\x86\Debug\GTalk Reminder Bot.exe
+D:\Work\Visual Studio Projects\GBotTalk\GTalk Reminder Bot\obj\x86\Debug\GTalk Reminder Bot.pdb
+D:\Work\Visual Studio Projects\GBotTalk\GTalk Reminder Bot\bin\Debug\GTalk Reminder Bot.exe
+D:\Work\Visual Studio Projects\GBotTalk\GTalk Reminder Bot\bin\Debug\GTalk Reminder Bot.pdb
+D:\Work\Visual Studio Projects\GBotTalk\GTalk Reminder Bot\bin\Debug\zlib.net.dll
+D:\Work\Visual Studio Projects\GBotTalk\GTalk Reminder Bot\bin\Debug\netlib.Dns.dll
+D:\Work\Visual Studio Projects\GBotTalk\GTalk Reminder Bot\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Work\Visual Studio Projects\GBotTalk\GTalk Reminder Bot\obj\x86\Debug\GTalk_Reminder_Bot.Form1.resources
+D:\Work\Visual Studio Projects\GBotTalk\GTalk Reminder Bot\obj\x86\Debug\GTalk_Reminder_Bot.Properties.Resources.resources
+D:\Work\Visual Studio Projects\GBotTalk\GTalk Reminder Bot\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\Work\Visual Studio Projects\GBotTalk\GTalk Reminder Bot\obj\x86\Debug\GenerateResource.write.1.tlog
